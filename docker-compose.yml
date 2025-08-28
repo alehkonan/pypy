@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+    image: pypy-app
+    volumes:
+      - ./:/app
+    ports:
+      - '8000:8000'
